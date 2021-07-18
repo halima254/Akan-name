@@ -16,25 +16,25 @@ else{
     return weekday;
 }
 }
-// function gender(){
-//     var confirmGender=document.getElementsByName("gender");
-//     var male=document.getElementById("male");
-//     var female=document.getElementById("female");
+function gender(){
+    var confirmGender=document.getElementsByName("gender");
+    var male=document.getElementById("male");
+    var female=document.getElementById("female");
 
 
-// if(!(confirmGender[0].checked || confirmGender[1].checked)){
+if(!(confirmGender[0].checked || confirmGender[1].checked)){
 
-//    return false;
-//     }
-//     else if(male.checked){
-//     confirmGender=male.value;
-//     return confirmGender;    
-//     } 
-//     else if(female.checked){
-//     confirmGender=female.value;
-//     return confirmGender;
-//     }
-// }
+   return false;
+    }
+    else if(male.checked){
+    confirmGender=male.value;
+    return confirmGender;    
+    } 
+    else if(female.checked){
+    confirmGender=female.value;
+    return confirmGender;
+    }
+}
 // function provideName(){
 //     var maleNames = ["Kwasi", "Kwadwo", "Twabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 //     var femaleNames= ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
