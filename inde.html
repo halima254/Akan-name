@@ -10,7 +10,6 @@
 <body>
 <div class="container">
     <div class="intro">
-    <!-- <img src="./assets/Akanstool.jpeg" alt="Akan Stools" height="100%" width="100%">    -->
     <h1><strong><span>Akan</span> Names</strong></h1>
     <h3><em>Proudly Ghananian</em></h3>
     </div>
@@ -23,7 +22,13 @@
     </div>
 <div class="container">
     <div class="naming">
-     <img src="./assets/akan1.jpeg" alt="naming">  
+     <img src="./assets/akan3.jpg" alt="Akan People" height="300px" width="300px">  
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda rem adipisci, quisquam nulla illum id maiores dolorem earum accusantium quia. Optio quis vero facere fuga esse magnam adipisci quae id.</p> 
+    </div>
+</div>
+<div class="container">
+    <div class="naming">
+     <img src="./assets/Akankids.jpeg" alt="naming"  height="300px" width="300px">  
      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda rem adipisci, quisquam nulla illum id maiores dolorem earum accusantium quia. Optio quis vero facere fuga esse magnam adipisci quae id.</p> 
     </div>
 </div>
@@ -32,20 +37,23 @@
 <h2>If you were a Ghananian ,what would your name be?</h2>
 <h2>Find out here</h2>
 
- <form >
+<p class="present"></p>
+<p class="presenting"></p>
+ <form onsubmit = "return false" name="form">
      <div class="container-form">
      <label>Year of Birth</label>
-     <input type="number"  placeholder="Y.o.B"><br>
+     <input id="year" type="text"  placeholder="Y.o.B" name="year"><br>
      <label>Month</label>
-     <input type="number" placeholder="month"><br>
+     <input id="month" type="text" placeholder="month" name="month"><br>
      <label>Date</label>
-     <input type="number" placeholder="Date"><br>
+     <input id ="date" type="text" placeholder="Date" name="date"><br>
      <label>Gender</label>
-     <input type="radio" id="male" name="Gender">Male 
-     <input type="radio" id="female" name="Gender">Female
-     <button type="button">FIND OUT YOUR NAME</button>
+     <input type="radio" id="male" name="Gender" value="male">Male 
+     <input type="radio" id="female" name="Gender" value="female">Female
+     <button type="button" onclick="provideName()">FIND OUT YOUR NAME</button>
     </div>
 
- </form>   
+</form> 
+<!-- <script src="node.js"></script>   -->
 </body>
 </html>
