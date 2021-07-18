@@ -1,21 +1,21 @@
-// function validator(){
-//  var year = document.getElementById("year").value;
-//  var month = document.getElementById("month").value;
-//  var date = document.getElementById("date").value;
+function validator(){
+ var year = document.getElementById("year").value;
+ var month = document.getElementById("month").value;
+ var date = document.getElementById("date").value;
 
 
 
-//  if
-//  (date==""|| month==""|| year==""){
-// return false;
-// }
-// else{
-//     var CC =year.slice(0,1);
-//     var YY =year.slice(2,3);
-//     var weekday= Math.floor(((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
-//     return weekday;
-// }
-// }
+ if
+ (date==""|| month==""|| year==""){
+return false;
+}
+else{
+    var CC =year.slice(0,1);
+    var YY =year.slice(2,3);
+    var weekday= Math.floor(((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+    return weekday;
+}
+}
 // function gender(){
 //     var confirmGender=document.getElementsByName("gender");
 //     var male=document.getElementById("male");
