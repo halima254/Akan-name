@@ -35,22 +35,22 @@ if(!(confirmGender[0].checked || confirmGender[1].checked)){
     return confirmGender;
     }
 }
-// function provideName(){
-//     var maleNames = ["Kwasi", "Kwadwo", "Twabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-//     var femaleNames= ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-//     var weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+function provideName(){
+    var maleNames = ["Kwasi", "Kwadwo", "Twabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    var femaleNames= ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    var weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 
-// if (gender() === "male") {
-//            alert("My Akan : " + maleNames[validator()]);
-//     }
-//  else if (gender() === "female") 
-//  {
-// alert("My Akan : " + femaleNames[validator()]);
-//        }
-// else{
-//        alert("Please select gender! ");
-//         }
-//     } 
+if (gender() === "male") {
+           alert("My Akan : " + maleNames[validator()]);
+    }
+ else if (gender() === "female") 
+ {
+alert("My Akan : " + femaleNames[validator()]);
+       }
+else{
+       alert("Please select gender! ");
+        }
+    } 
 
 
