@@ -7,3 +7,7 @@ This project was developed by Halima Yahya,
 a web developer from Moring school.
 ## Set up Instructions
 The project requires some knowledge on Javascript 
+## Technologies used
+-Html 5
+-Css 3
+-Javascript
