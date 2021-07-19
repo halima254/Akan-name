@@ -11,3 +11,5 @@ The project requires some knowledge on Javascript
 -Html 5
 -Css 3
 -Javascript
+## Contact Information
+Phone :0700899898 Email adress: halima.yahya@student.moringaschool.com
