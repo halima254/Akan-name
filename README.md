@@ -8,11 +8,11 @@ a web developer from Moring school.
 ## Set up Instructions
 The project requires some knowledge on Javascript 
 ## Technologies used
--Html 5
--Css 3
+-Html 5<br>
+-Css 3<br>
 -Javascript
 ## Contact Information
-Phone :0700899898 Email adress: halima.yahya@student.moringaschool.com
+Phone :0700899898 <br>Email adress: halima.yahya@student.moringaschool.com
 ## Copyright Information
 Copyright@2021 Author: Halima Yahya
 
