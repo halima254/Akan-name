@@ -1,4 +1,3 @@
-
 body{
     background: url(./assets/Akanstool.jpeg) no-repeat top center;
     background-size: cover;
@@ -18,13 +17,25 @@ h3{
     background-color: rgba(0, 0, 0, 0.5);
     color: wheat;
 }
+.Africa img{
+    margin-top: 15px;
+    border-radius: 50%;
+}
 .akan{
     background-color: rgba(0, 0, 0, 0.5);
     color: wheat;  
 }
+.akan img{
+    margin-top: 15px;
+    border-radius: 50%;
+}
 .naming{
     background-color: rgba(0, 0, 0, 0.5);
     color: wheat;
+}
+.naming img{
+    margin-top: 15px;
+    border-radius: 50%;
 }
 .button{
     width: 50px;

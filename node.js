@@ -1,42 +1,33 @@
-function validatorFunction(){
-    
-    const maleNames = ["Kwasi", "Kwadwo", "Twabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    const femaleNames= ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]; 
+const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+function validatorFunction() {
+    const year = parseInt(document.getElementById("year").value);
+    const month = parseInt(document.getElementById("month").value);
+    const date = parseInt(document.getElementById("date").value);
+    const male = document.getElementById("male");
+    const female = document.getElementById("female");
 
-    var year = parseInt(document.getElementById('year').value);
-    var month =parseInt (document.getElementById('month').value);
-    var date = parseInt(document.getElementById('date').value);
-    var male = document.getElementById("male").value;
-    var female=document.getElementById("female").value;
-    
-    if (date<=0 || date>31){
-        alert("invalid date!");
+    if (year <=1800 || year >= 2022) {
+        alert("Enter valid year");
+    } else if (month <1 || month >12) {
+        alert("Please enter a valid Month");
+    } else if (date < 1 || date >31) {
+        alert("Incorect date. please enter a correct one");
+    } else if (year !== year) {
+        alert("Please fill the form");
     }
-    else if (month<=0 || month >12){
-        alert("invalid month!")
-    }
-    else if (year<=1400 || year>2020){
-        alert("invalid year!")
-    }
-    else if (male =="" && female == ""){
-        alert("pick a gender")
-    }
-    
-      var cc = year.slice(0,1);
-       var yy = year.slice(2,3);
-       var mm = month;
-       var dd = date;
-       var day= Math.floor(((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7;
 
-   if(male == "male"){
-       document.getElementById("output").innerHTML=("Your Akan name" + maleNames[day]+weekDays[day])
-   }
-   else if(female=="female"){
-    document.getElementById("output").innerHTML=("Your Akan name" + femaleNames[day]+weekDays[day])
-
-   } 
-
+    const a = Math.floor((14 - month) / 12)
+    const y = year - a
+    const m = month + 12 * a - 2
+    const d = (date + y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(year / 400) + Math.floor((31 * m) / 12)) % 7;
+    if (male.checked == true) {
+        ("You were born on " + weekDays[d] + " your Akan name is: " + maleNames[d]);
+        document.getElementById('name').innerHTML = "You were born on " + weekDays[d] + " and your Akan name is: " + maleNames[d];
+    } else if (female.checked == true) {
+        ("You were born on " + weekDays[d] + " your Akan name is: " + femaleNames[d]);
+        document.getElementById('name').innerHTML = "You were born on " + weekDays[d] + " and your Akan name is: " + femaleNames[d];
+    }
 }
-
-
+   
