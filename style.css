@@ -4,15 +4,18 @@ body{
     background-attachment: fixed;
     text-align: center;
 }
+
 h1
 h3{
     color: black;
 }
+
 .container{
     color: wheat;
     font-size: 20gitpx;
 
 }
+
 .Africa{
     background-color: rgba(0, 0, 0, 0.5);
     color: wheat;
